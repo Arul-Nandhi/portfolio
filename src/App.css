@@ -1,0 +1,79 @@
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loader-logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loader-logo::after {
+  content: 'AK';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--accent-blue);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0);
+  animation: logo-fill 1.5s ease-in-out forwards;
+}
+
+@keyframes logo-fill {
+  0% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); }
+  100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+.loader-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(162, 210, 255, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader-fill {
+  height: 100%;
+  background: var(--gradient);
+  width: 0%;
+  animation: bar-fill 1.5s ease-in-out forwards;
+}
+
+@keyframes bar-fill {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+.loader-text {
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
