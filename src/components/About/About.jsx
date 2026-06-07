@@ -46,7 +46,7 @@ const About = () => {
           >
             <h3 className="about-greeting">Hi, I'm {import.meta.env.VITE_MY_NAME || "a Developer"}.</h3>
             <p className="about-text">
-              Motivated and high-performing Computer Science Engineering undergraduate with strong foundations in web development and AI-based systems. Hands-on experience through internships and projects in frontend development, automation, and data analysis. 
+              Motivated and high-performing BE Computer Science Graduate (2026 Passed Out) with strong foundations in web development and AI-based systems. Hands-on experience through internships and projects in frontend development, automation, and data analysis. 
               Passionate about building scalable software solutions, intelligent systems, and user-centric applications. Seeking entry-level roles in Software Development.
             </p>
           </motion.div>

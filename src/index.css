@@ -205,3 +205,40 @@ body {
   background: rgba(2, 132, 199, 0.2);
   color: var(--text-primary);
 }
+
+/* ── Dark Theme Variables ── */
+body.dark {
+  --bg-primary:     #0b1329; /* Dark midnight blue */
+  --bg-secondary:   #1c2541; /* Dark navy */
+  --bg-card:        #1c2541;
+  --bg-card-hover:  #141b2f; 
+
+  /* Accents */
+  --accent-lavender: #38bdf8; /* Sky Blue */
+  --accent-blue:     #0ea5e9; /* Ocean Blue */
+  --accent-mint:     #34d399; /* Emerald/Pastel Green */
+  --accent-peach:    #f472b6; /* Pastel Pink */
+  
+  --gradient:       linear-gradient(135deg, #0ea5e9 0%, #34d399 100%);
+  --gradient-text:  linear-gradient(135deg, #0ea5e9, #34d399, #38bdf8);
+
+  --text-primary:   #f1f5f9; /* Off-white */
+  --text-secondary: #cbd5e1; /* Muted grey-blue */
+  --text-muted:     #94a3b8; /* Muted grey */
+
+  --border:         rgba(56, 189, 248, 0.15);
+  --border-hover:   rgba(52, 211, 153, 0.4);
+  --glow:           0 10px 30px rgba(56, 189, 248, 0.15);
+  --glow-strong:    0 15px 40px rgba(52, 211, 153, 0.25);
+}
+
+body.dark .btn-outline {
+  background: rgba(28, 37, 65, 0.4);
+  color: var(--text-primary);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+body.dark .btn-outline:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: var(--accent-blue);
+}

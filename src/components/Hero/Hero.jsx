@@ -38,7 +38,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            Motivated and high-performing Computer Science Engineering undergraduate passionate about building scalable software solutions, intelligent AI systems, and user-centric web applications.
+            Motivated and high-performing BE Computer Science Graduate (2026 Passed Out) passionate about building scalable software solutions, intelligent AI systems, and user-centric web applications.
           </motion.p>
 
           <motion.div 

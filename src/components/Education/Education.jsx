@@ -7,7 +7,7 @@ const Education = () => {
     {
       degree: "Bachelor of Engineering in Computer Science",
       institution: "Dr. Mahalingam College of Engineering and Technology, Pollachi",
-      duration: "2022 - Present",
+      duration: "2022 - 2026",
       score: "CGPA - 9.2/10"
     },
     {

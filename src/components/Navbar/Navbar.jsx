@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,15 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
 
   const navLinks = [
     { name: 'Home', to: 'home' },
@@ -55,6 +65,9 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary resume-btn">Resume</a>
+          <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Theme">
+            {theme === 'light' ? <FiMoon /> : <FiSun />}
+          </button>
         </nav>
 
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

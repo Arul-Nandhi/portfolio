@@ -143,3 +143,42 @@
     padding: 12px 30px;
   }
 }
+
+/* ── Theme Toggle Button & Dark Mode Overrides ── */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: var(--transition);
+  margin-left: 5px;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(2, 132, 199, 0.1);
+  color: var(--accent-blue);
+  transform: scale(1.1);
+}
+
+body.dark .navbar.scrolled {
+  background: rgba(11, 19, 41, 0.95);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 850px) {
+  .theme-toggle-btn {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  body.dark .nav-links {
+    background: rgba(11, 19, 41, 0.98);
+  }
+}

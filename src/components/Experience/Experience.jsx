@@ -5,18 +5,25 @@ import './Experience.css';
 const Experience = () => {
   const internships = [
     {
-      company: "Thinksolv Technologies",
-      role: "Web Development Intern",
-      location: "Coimbatore",
-      duration: "June - July 2024",
-      description: "Gained valuable experience in modern web development tools and frameworks. Learned about version controls and collaborated on building user interfaces."
+      company: "InfoMtrix Digital Solutions",
+      role: "Full Stack Developer – Python Intern",
+      location: "Remote/Virtual",
+      duration: "Jan 2026 – Apr 2026",
+      description: "Developed full-stack applications using Python. Worked with REST APIs, MySQL, and CRUD operations. Built and maintained web-based applications. Collaborated in a remote development environment."
     },
     {
       company: "CodeAlpha",
-      role: "Frontend Development",
-      location: "Virtual",
+      role: "Frontend Development Intern",
+      location: "Virtual/Remote",
       duration: "Jan 2025",
       description: "Basic frontend projects including a Calculator, Music Player, and other interactive UI components to enhance foundational knowledge in web technologies."
+    },
+    {
+      company: "Thinksolv Technologies",
+      role: "Web Development Intern",
+      location: "Coimbatore",
+      duration: "Jun 2024 – Jul 2024",
+      description: "Gained valuable experience in modern web development tools and frameworks. Learned about version controls and collaborated on building user interfaces."
     }
   ];
 

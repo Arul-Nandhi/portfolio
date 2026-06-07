@@ -14,7 +14,7 @@ const Certifications = () => {
     {
       role: "President",
       org: "Digiflash - CSE association",
-      duration: "Jul 2025 - Present"
+      duration: "Jul 2025 - May 2026"
     },
     {
       role: "Joint Secretary",

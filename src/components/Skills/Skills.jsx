@@ -18,7 +18,10 @@ const Skills = () => {
       icon: <FaHtml5 />,
       skills: [
         { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 }
+        { name: "CSS", level: 85 },
+        { name: "JavaScript", level: 80 },
+        { name: "React", level: 85 },
+        { name: "Django", level: 85 }
       ]
     },
     {
@@ -47,8 +50,8 @@ const Skills = () => {
       title: "Bot Dev & Automation",
       icon: <FaRobot />,
       skills: [
-        { name: "Python Scripting", level: 85 },
-        { name: "API Handling", level: 80 },
+        { name: "Python Scripting & CRUD", level: 85 },
+        { name: "API Handling & REST APIs", level: 80 },
         { name: "Basic Web Scraping", level: 75 }
       ]
     }
