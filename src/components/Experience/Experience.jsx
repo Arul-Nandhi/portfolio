@@ -7,14 +7,14 @@ const Experience = () => {
     {
       company: "InfoMtrix Digital Solutions",
       role: "Full Stack Developer – Python Intern",
-      location: "Remote/Virtual",
+      location: "Remote",
       duration: "Jan 2026 – Apr 2026",
       description: "Developed full-stack applications using Python. Worked with REST APIs, MySQL, and CRUD operations. Built and maintained web-based applications. Collaborated in a remote development environment."
     },
     {
       company: "CodeAlpha",
       role: "Frontend Development Intern",
-      location: "Virtual/Remote",
+      location: "Virtual",
       duration: "Jan 2025",
       description: "Basic frontend projects including a Calculator, Music Player, and other interactive UI components to enhance foundational knowledge in web technologies."
     },
